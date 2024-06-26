@@ -90,7 +90,7 @@ nav ul li a:hover::after{
 .header-text h1 span{
     color: #ff004f;
 }
-/*-------about------*/
+/*---------------------------about-----------------------------------*/
 #about{
     padding: 80px 0;
     color: #080808;
@@ -146,7 +146,32 @@ nav ul li a:hover::after{
 .Edu-content {
     margin-left: 20px; /* Adjust margin-left as needed */
 }
-/*------------------------Skills---------------*/
+.subexp-title{
+    font-size: 25px;
+    font-weight: 100;
+    color: #080808;
+}
+.Exp-Icons{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #818589;
+}
+.Exps-Content{
+    text-decoration: none;
+    font-size: 15px;
+    color: #262626;
+}
+.Exp-Icons {
+    display: flex;
+    align-items: center;
+    margin-top: 10px; /* Adjust margin-top as needed */
+}
+
+.Exps-Content {
+    margin-left: 20px; /* Adjust margin-left as needed */
+}
+/*------------------------------Skills---------------------------*/
 #Skills {
     padding: 30px 0;
 }
@@ -160,47 +185,90 @@ nav ul li a:hover::after{
 .sub-title-1 {
     text-align: center; /* Center the heading */
 }
-
+.skill-image {
+    background-color: white;
+    display: inline-block; /* Ensure container only takes up the space of the image */
+    padding: 5px; /* Optional: Add padding for space around the image */
+  }  
 .image-container {
     display: flex; /* Use flexbox for layout */
     flex-wrap: wrap; /* Allow images to wrap to the next line if necessary */
     justify-content: flex-start; /* Align images horizontally at the start of the container */
 }
 
-.skill-image {
-    width: calc(100% / 6 - 20px); /* Calculate width for 6 images per row with margin */
-    height: auto; /* Maintain aspect ratio */
-    margin: 30px; /* Add some margin around each image */
-    max-width: 120px; /* Adjust the maximum width of the image */
-    max-height: 120px; /* Adjust the maximum height of the image */
+.image-container {
+    text-align: justify; /* Align images evenly */
+    margin: 0 -7.5px; /* Counteract space added by text-align */
 }
-/*---------------Experience-------------------------*/
-#Skills {
-    padding: 30px 0;
+
+.skill-image {
+    width: calc((100% - 150px) / 6); /* Calculate width for 6 images per row with margin */
+    height: auto; /* Maintain aspect ratio */
+    margin: 40px; /* Add some margin around each image */
+    max-width: 100px; /* Adjust the maximum width of the image */
+    max-height: 100px; /* Adjust the maximum height of the image */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    display: inline-block; /* Ensure images appear in a row */
+    vertical-align: top; /* Align images to the top */
+}
+/*-----------------------------------Experience-------------------------------------*/
+#Experience {
+    text-align: center; /* Center align the content */
 }
 
 .container {
-    max-width: 1200px; /* Adjust the maximum width as needed */
-    margin: 0 auto; /* Center the container horizontally */
-    padding: 0 20px; /* Add some padding to the sides */
-}
-.Experience-1 {
-    display: flex;
-    align-items: center;
+    margin-bottom: 20px; /* Add some space between the subheading and boxes */
 }
 
-.Experience-1 img {
-    width: 150px; /* Adjust as needed */
-    margin-right: 20px; /* Adjust spacing between image and text */
+.boxes-container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space items evenly */
+    margin-left: auto; /* Align container to the left side of the page */
+    margin-right: auto; /* Align container to the left side of the page */
+    max-width: 1200px; /* Limit container width if needed */
+}
+.exp-1-image img{
+    width: 300px;
+}
+.Experinece-1 .exp-1-image p {
+    font-weight: bold;
+}
+.Experinece-2 .exp-2-image p {
+    font-weight: bold;
+}
+.exp-2-image img{
+    width: 300px;
+}
+.Experinece-1, .Experinece-2 {
+    width: 45%; /* Set width for each experience box */
+    padding: 20px; /* Add some padding for spacing */
+    border: 1px solid #ccc; /* Add border for box */
+    box-sizing: border-box; /* Include padding and border in box size */
+    border-radius: 30px;
 }
 
-.Exp-content {
-    flex: 1; /* This makes the content fill the remaining space */
+.Experinece-1 {
+    margin-right: 20px; /* Add margin between the boxes */
 }
-/*---------------Project-----------*/
+/*---------------------------------------Project----------------------------------*/
 
 #Project{
     padding: 30px 0;
+}
+.speedcontrol-image {
+    width: 100%; /* Ensure the image takes full width of its container */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove any default inline gaps */
+}
+.employee-image{
+    width: 100%; /* Ensure the image takes full width of its container */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove any default inline gaps */
+}
+.lane-image{
+    width: 100%; /* Ensure the image takes full width of its container */
+    height: 300px; /* Maintain aspect ratio */
+    display: block; /* Remove any default inline gaps */
 }
 .project-list{
     display: grid;
@@ -214,6 +282,7 @@ nav ul li a:hover::after{
     font-weight: 300;
     border-radius: 10px;
     transition: background 0.5s, transform 05.s;
+    border: 1px solid #ccc;
 }
 .project-list div i{
     font-size: 50px;
@@ -232,40 +301,235 @@ nav ul li a:hover::after{
     display: inline-block;
 }
 .project-list div:hover{
-    background: #ff004f;
+    background: grey;
     transform: translateY(-10px);
 }
-/*--------------------------Certification----------*/
+/*--------------------------------------Certification------------------------------*/
 #Certification{
     padding: 30px 0;
 }
-.sample-container {
+.NPTEL{
     border: 2px solid #ccc; /* Border style */
     border-radius: 10px; /* Rounded corners */
     padding: 20px; /* Padding inside the box */
-    width: 1200px; /* Adjust the width as needed */
+    width: 100%; /* Adjust the width as needed */
     margin: 0 auto;
 }
-.sample{
+.NPTEL{
     display: flex;
 }
-.sample-image {
-    width: 100px; /* Adjust the width as needed */
+.NPTEL-image {
+    width: 70px; /* Adjust the width as needed */
     height: auto; /* Maintain aspect ratio */
     margin-right: 50px; /* Add some space between the image and the paragraph */
 }
-
-.sample-info {
+.NPTEL-info {
     flex-grow: 1; /* Adjust as needed based on the image width */
 }
 
-.sample-info p,
-.sample-info a {
+.NPTEL-info p,
+.NPTEL-info a {
     margin-top: 0; /* Remove default top margin */
 }
-/*---------------volunteering---------------------*/
+.python-workshop{
+    border: 2px solid #ccc; /* Border style */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding inside the box */
+    width: 100%; /* Adjust the width as needed */
+    margin: 0 auto;
+}
+.python-workshop{
+    display: flex;
+}
+.python-image {
+    width: 70px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 50px; /* Add some space between the image and the paragraph */
+}
+.python-info {
+    flex-grow: 1; /* Adjust as needed based on the image width */
+}
+
+.python-info p,
+.python-info a {
+    margin-top: 0; /* Remove default top margin */
+}
+.onedayworkshop{
+    border: 2px solid #ccc; /* Border style */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding inside the box */
+    width: 100%; /* Adjust the width as needed */
+    margin: 0 auto;
+}
+.onedayworkshop{
+    display: flex;
+}
+.onedayworkshop-image {
+    width: 70px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 50px; /* Add some space between the image and the paragraph */
+}
+.onedayworkshop-info {
+    flex-grow: 1; /* Adjust as needed based on the image width */
+}
+
+.onedayworkshop-info p,
+.onedayworkshop-info a {
+    margin-top: 0; /* Remove default top margin */
+}
+.paperpresentation{
+    border: 2px solid #ccc; /* Border style */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding inside the box */
+    width: 100%; /* Adjust the width as needed */
+    margin: 0 auto;
+}
+.paperpresentation{
+    display: flex;
+}
+.paper-image {
+    width: 70px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 50px; /* Add some space between the image and the paragraph */
+}
+.paper-info {
+    flex-grow: 1; /* Adjust as needed based on the image width */
+}
+
+.paper-info p,
+.paper-info a {
+    margin-top: 0; /* Remove default top margin */
+}
+.inplant{
+    border: 2px solid #ccc; /* Border style */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding inside the box */
+    width: 100%; /* Adjust the width as needed */
+    margin: 0 auto;
+}
+.inplant{
+    display: flex;
+}
+.TNEB-image {
+    width: 70px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 50px; /* Add some space between the image and the paragraph */
+}
+.TNEB-info {
+    flex-grow: 1; /* Adjust as needed based on the image width */
+}
+
+.TNEB-info p,
+.TNEB-info a {
+    margin-top: 0; /* Remove default top margin */
+}
+.internship{
+    border: 2px solid #ccc; /* Border style */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding inside the box */
+    width: 100%; /* Adjust the width as needed */
+    margin: 0 auto;
+}
+.internship{
+    display: flex;
+}
+.intership-image {
+    width: 70px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 50px; /* Add some space between the image and the paragraph */
+}
+.internship-info{
+    flex-grow: 1; /* Adjust as needed based on the image width */
+}
+
+.internship-info p,
+.internship-info a {
+    margin-top: 0; /* Remove default top margin */
+}
+.powerplatform{
+    border: 2px solid #ccc; /* Border style */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding inside the box */
+    width: 100%; /* Adjust the width as needed */
+    margin: 0 auto;
+}
+.powerplatform{
+    display: flex;
+}
+.powerplatform-image {
+    width: 70px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 50px; /* Add some space between the image and the paragraph */
+}
+.powerplatform-info{
+    flex-grow: 1; /* Adjust as needed based on the image width */
+}
+
+.powerplatform-info p,
+.powerplatform-info a {
+    margin-top: 0; /* Remove default top margin */
+}
+.Dynamics{
+    border: 2px solid #ccc; /* Border style */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding inside the box */
+    width: 100%; /* Adjust the width as needed */
+    margin: 0 auto;
+}
+.Dynamics{
+    display: flex;
+}
+.Dynamics-image {
+    width: 70px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 50px; /* Add some space between the image and the paragraph */
+}
+.Dynamics-info{
+    flex-grow: 1; /* Adjust as needed based on the image width */
+}
+
+.Dynamics-info p,
+.Dynamics-info a {
+    margin-top: 0; /* Remove default top margin */
+}
+/*--------------------------------------Acheivement---------------------------------*/
+.sample1-container {
+    width: 100%;
+}
+
+.Achievement-content {
+    border: 2px solid #ccc; /* border around the box */
+    padding: 20px; /* padding inside the box */
+    align-items: center; /* vertically center the flex items */
+    border-radius: 20px;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.sample1-container .Achievement-content {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+}
+.Achievement-content img{
+    width: 300px;
+}
+.Achievement-content .img-1{
+    width: 600px;
+}
+.sample1-container .Achievement-content img {
+    flex: 0 0 auto; /* Maintain the original size of the images */
+    margin-right: 5px; /* Add some spacing between the images */
+}
+.sample1-container .Achievement-content img {
+    display: block;
+    margin: 0 auto; /* Center horizontally */
+}
+.sample1-container .Achievement-content .clgg h1,
+.sample1-container .Achievement-content .off h1 {
+    font-size: 18px; /* Adjust the font size as per your requirement */
+}
+/*------------------------------------volunteering----------------------------*/
 .content-box {
-    width: 1200px; /* Adjust the width of the box as needed */
+    width: 100%; /* Adjust the width of the box as needed */
     border-radius: 10px;
     border: 1px solid #ccc; /* Optional: Add border for visual separation */
     padding: 20px; /* Optional: Add padding for spacing */
@@ -273,7 +537,7 @@ nav ul li a:hover::after{
 .Volunt-content {
     display: flex;
     align-items: center;
-  }
+}
   
   .Volunt-content img {
     flex: 0 0 auto;
@@ -285,7 +549,7 @@ nav ul li a:hover::after{
   .Volunt-content p {
     flex: 1;
   }
-/*-------------------------contact-------------*/
+/*-----------------------------------contact--------------------------------------*/
 
 .contact-left{
     flex-basis: 35%;
@@ -297,7 +561,7 @@ nav ul li a:hover::after{
     margin-top: 30px;
 }
 .contact-left p i{
-    color: #ff004f;
+    color: #262626;
     margin-right: 15px;
     font-size: 25px;
 }
@@ -313,7 +577,7 @@ nav ul li a:hover::after{
     transition: transform 05.s;
 }
 .social-icons a:hover{
-    color: #ff004f;
+    color: #262626;
     transform: translateY(-5px);
 }
 .btn.btn2{
@@ -354,17 +618,15 @@ form .btn2{
     margin-top: 20px;
     color: #fff;
 }
-/*---------------------------CSS for mobile screen------------*/
+/*---------------------------CSS for mobile screen-----------------*/
 nav .fa-solid{
     display: none;
 }
 nav .fa-regular{
     display: none;
 }
-@media only screen and (max-width: 600px){
-    #header{
-        background-image: url(images/Blankpage.jpg);
-    }
+@media screen and (max-width: 1000px) {
+    /* Adjustments for mobile screens */
     .header-text{
         margin-top: 100%;
         font-size: 16px;
@@ -372,6 +634,21 @@ nav .fa-regular{
     .header-text h1{
         font-size: 30px;
     }
+    #header {
+        display: grid;
+        grid-template-columns: auto 1fr; /* Name takes as much space as it needs, rest for the icon */
+        align-items: center;
+    }
+    
+    .name {
+        grid-column: 1; /* Ensures the name is on the left */
+    }
+    
+    .container-1 {
+        grid-column: 4; /* Ensures the icon is on the right */
+        text-align: right; /* Aligns the icon to the right */
+    }
+    
     nav .fa-solid{
         display: block;
         font-size: 25px;
@@ -381,7 +658,7 @@ nav .fa-regular{
         font-size: 25px;
     }
     nav ul{
-        background: #ff004f;
+        background: #ababab;
         position: fixed;
         top: 0;
         right: -200px;
@@ -400,6 +677,12 @@ nav .fa-regular{
         top: 25px;
         left: 25px;
         cursor: pointer;
+    }
+    nav ul .fa-solid{
+            position: fixed;
+            top: 20px; /* Adjust the value to your preference */
+            right: 200px; /* Adjust the value to your preference */
+            z-index: 9999; /* Adjust the z-index if needed */
     }
     .sub-title{
         font-size: 40px;
@@ -423,4 +706,72 @@ nav .fa-regular{
     .copyright{
         font-size: 14px;
     }
+
+    .sub-title-1 {
+        text-align: center;
+    }
+    .image-container .skill-image{
+        width: calc((100% - 100px) / 5); /* Calculate width for 6 images per row with margin */
+        height: auto; /* Maintain aspect ratio */
+        margin: 40px; /* Add some margin around each image */
+        max-width: 100px; /* Adjust the maximum width of the image */
+        max-height: 100px; /* Adjust the maximum height of the image */
+        box-sizing: border-box; /* Include padding and border in the element's total width and height */
+        display: inline-block; /* Ensure images appear in a row */
+        vertical-align: top; /* Align images to the top */
+    }
+
+    .boxes-container {
+        flex-direction: column;
+    }
+
+    .Experinece-1,
+    .Experinece-2 {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .Experinece-1 .exp-1-image,
+    .Experinece-2 .exp-2-image {
+        text-align: center;
+    }
+
+    .sample1-container {
+        flex-direction: column;
+    }
+    .Achievement-content .img-1{
+        width: 100%;
+    }
+
+    .Achievement-content {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .Volunt-content {
+        flex-direction: column;
+    }
+
+    .contact-left,
+    .contact-right {
+        width: 100%;
+    }
+
+    .contact-right input,
+    .contact-right textarea,
+    .contact-right button {
+        width: calc(100% - 20px);
+        margin: 10px;
+    }
+
+    .social-icons {
+        text-align: center;
+    }
+
+    .copyright {
+        text-align: center;
+    }
+}
+#msg{
+    display: block;
 }
