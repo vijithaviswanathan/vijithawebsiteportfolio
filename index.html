@@ -319,6 +319,23 @@
         })
         .catch(error => console.error('Error!', error.message))
     })
+
+
+    function toggleMenu(){
+    const menu = document.querySelector(".menu-links");
+    const icon = document.querySelector(".hamburger-icon");
+    menu.classList.toggle("open");
+    icon.classList.toggle("open");
+}
+
+function makeCall(phoneNumber) {
+    window.location.href = "tel:" + phoneNumber;
+}
+
+document.getElementById("callLink").addEventListener("click", function(event) {
+    event.preventDefault();
+    makeCall("+916382064949"); 
+});
   </script>  
    </body>
 </html>
