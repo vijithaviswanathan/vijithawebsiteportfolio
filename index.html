@@ -13,22 +13,26 @@
             <div class="name">
                 <h1>Vijitha Viswanathan </h1> <!-- Name on the left -->
             </div>
-            <div class="container-1">
-                <nav>
-                    <ul id="sidemenu">
-                         <li><a href="#about">About</a></li>
-                         <li><a href="#Skills">Skills</a></li>
-                         <li><a href="#Experience">Experience</a></li>
-                         <li><a href="#Project">Project</a></li>
-                         <li><a href="#Certification">Certification</a></li>
-                         <li><a href="#Achievement">Achievement</a></li>
-                         <li><a href="#Volunteering">Volunteering</a></li>
-                         <li><a href="#contact">Contact</a></li>
-                         <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
-                    </ul>
-                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-                </nav>
-            </div>
+            <nav id="hamburger-nav">
+                <div class="logo">Sanjai KRP</div>
+                <div class="hamburger-menu">
+                    <div class="hamburger-icon" onclick="toggleMenu()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="menu-links">
+                        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                         <li><a href="#Skills" onclick="toggleMenu()">Skills</a></li>
+                         <li><a href="#Experience" onclick="toggleMenu()">Experience</a></li>
+                         <li><a href="#Project" onclick="toggleMenu()">Project</a></li>
+                         <li><a href="#Certification" onclick="toggleMenu()">Certification</a></li>
+                         <li><a href="#Achievement" onclick="toggleMenu()">Achievement</a></li>
+                         <li><a href="#Volunteering" onclick="toggleMenu()">Volunteering</a></li>
+                         <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                    </div>
+                </div>
+            </nav>
         </div>
 <!----------------------------------about----------------------------------->
         <div id="about">
@@ -318,24 +322,7 @@
             form.reset()
         })
         .catch(error => console.error('Error!', error.message))
-    })
-
-
-    function toggleMenu(){
-    const menu = document.querySelector(".menu-links");
-    const icon = document.querySelector(".hamburger-icon");
-    menu.classList.toggle("open");
-    icon.classList.toggle("open");
-}
-
-function makeCall(phoneNumber) {
-    window.location.href = "tel:" + phoneNumber;
-}
-
-document.getElementById("callLink").addEventListener("click", function(event) {
-    event.preventDefault();
-    makeCall("+916382064949"); 
-});
+    } )
   </script>  
    </body>
 </html>
