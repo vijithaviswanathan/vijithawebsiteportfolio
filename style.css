@@ -625,7 +625,7 @@ nav .fa-solid{
 nav .fa-regular{
     display: none;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
     /* Adjustments for mobile screens */
     .header-text{
         margin-top: 100%;
