@@ -252,57 +252,85 @@ nav ul li a:hover::after{
 }
 /*---------------------------------------Project----------------------------------*/
 
-#Project{
-    padding: 30px 0;
+
+/* Container Styling */
+#Project {
+    padding: 20px;
+    background-color: #fff;
 }
-.speedcontrol-image {
-    width: 100%; /* Ensure the image takes full width of its container */
-    height: auto; /* Maintain aspect ratio */
-    display: block; /* Remove any default inline gaps */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
 }
-.employee-image{
-    width: 100%; /* Ensure the image takes full width of its container */
-    height: auto; /* Maintain aspect ratio */
-    display: block; /* Remove any default inline gaps */
+
+/* Title Styling */
+.sub-title-1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
 }
-.lane-image{
-    width: 100%; /* Ensure the image takes full width of its container */
-    height: 300px; /* Maintain aspect ratio */
-    display: block; /* Remove any default inline gaps */
+
+/* Project List Styling */
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
-.project-list{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 40px;
-    margin-top: 50px;
+
+/* Individual Project Box Styling */
+.project-list > div {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    width: 350px; /* Adjust based on layout preferences */
+    transition: box-shadow 0.3s ease;
 }
-.project-list div{
-    padding: 40px;
-    font-size: 13px;
-    font-weight: 300;
-    border-radius: 10px;
-    transition: background 0.5s, transform 05.s;
-    border: 1px solid #ccc;
+
+/* Add hover effect for better UX */
+.project-list > div:hover {
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
 }
-.project-list div i{
-    font-size: 50px;
-    margin-bottom: 30px;
-}
-.project-list div h2{
-    font-size: 30px;
-    font-weight: 500;
+
+/* Image Styling */
+.project-list img {
+    max-width: 100%;
+    border-radius: 4px;
     margin-bottom: 15px;
 }
-.project-list div a{
-    text-decoration: none;
-    color: #080808;
-    font-size: 12px;
-    margin-top: 20px;
-    display: inline-block;
+
+/* Heading Styling */
+.project-list h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #333;
 }
-.project-list div:hover{
-    background: grey;
-    transform: translateY(-10px);
+
+/* Paragraph Styling */
+.project-list p {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+/* Link Styling */
+.project-list a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.project-list a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .project-list > div {
+        width: 100%;
+    }
 }
 /*--------------------------------------Certification------------------------------*/
 #Certification{
@@ -493,39 +521,75 @@ nav ul li a:hover::after{
     margin-top: 0; /* Remove default top margin */
 }
 /*--------------------------------------Acheivement---------------------------------*/
+#Achievement {
+    padding: 20px;
+    background-color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.sub-title-1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
 .sample1-container {
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .Achievement-content {
-    border: 2px solid #ccc; /* border around the box */
-    padding: 20px; /* padding inside the box */
-    align-items: center; /* vertically center the flex items */
-    border-radius: 20px;
-    justify-content: space-between;
-    flex-direction: row;
-}
-.sample1-container .Achievement-content {
     display: flex;
-    flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+    flex-direction: column;
+    gap: 20px;
 }
-.Achievement-content img{
+
+.achievement-item {
+    display: flex;
+    align-items: flex-start;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.achievement-item img {
     width: 300px;
+    height: auto;
+    margin-right: 20px;
 }
-.Achievement-content .img-1{
-    width: 600px;
+
+.Achieve {
+    flex: 1;
 }
-.sample1-container .Achievement-content img {
-    flex: 0 0 auto; /* Maintain the original size of the images */
-    margin-right: 5px; /* Add some spacing between the images */
+
+.Achieve div {
+    margin-bottom: 20px;
 }
-.sample1-container .Achievement-content img {
-    display: block;
-    margin: 0 auto; /* Center horizontally */
+
+h1.clg, h1.office, h1.clg-1 , h1.clg-2{
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: underline;
+    list-style-type: disc;
 }
-.sample1-container .Achievement-content .clgg h1,
-.sample1-container .Achievement-content .off h1 {
-    font-size: 18px; /* Adjust the font size as per your requirement */
+
+.Achieve p {
+    margin: 0;
+}
+
+.Achieve a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.Achieve a:hover {
+    text-decoration: underline;
 }
 /*------------------------------------volunteering----------------------------*/
 .content-box {
@@ -868,4 +932,110 @@ nav .fa-regular{
 }
 #msg{
     display: block;
+}
+/* Base styles for mobile screens */
+@media only screen and (max-width: 768px) {
+    #Achievement {
+        padding: 10px;
+    }
+
+    .container {
+        width: 100%;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .sub-title-1 {
+        font-size: 1.5rem;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .sample1-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Achievement-content {
+        width: 100%;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+
+    .achievement-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .achievement-item img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .Achieve {
+        width: 100%;
+    }
+
+    .clgg, .off, .clgg-1, .clgg-2 {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .clg, .office, .clg-1, .clg-2 {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 1rem;
+        line-height: 1.5;
+        margin-bottom: 10px;
+    }
+
+    a {
+        color: #007bff;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+}
+
+/* Media Query for larger screens */
+@media (min-width: 768px) {
+    .row {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .about-col-1 {
+        flex: 1;
+        margin-right: 20px;
+    }
+
+    .about-col-2 {
+        flex: 2;
+    }
+
+    .sub-title {
+        font-size: 28px;
+    }
+
+    .subedu-title, .subexp-title {
+        font-size: 24px;
+    }
+
+    .Edu-Icons i, .Exp-Icons i {
+        font-size: 30px;
+    }
+
+    .Edu-content p, .Exps-Content p {
+        font-size: 16px;
+    }
 }
