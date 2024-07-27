@@ -549,6 +549,95 @@ nav ul li a:hover::after{
   .Volunt-content p {
     flex: 1;
   }
+  .content1-box {
+    width: 100%; /* Adjust the width of the box as needed */
+    border-radius: 10px;
+    border: 1px solid #ccc; /* Optional: Add border for visual separation */
+    padding: 20px; /* Optional: Add padding for spacing */
+  }
+.Volunt1-content {
+    display: flex;
+    align-items: center;
+}
+  
+  .Volunt1-content img {
+    flex: 0 0 auto;
+    width: 400px; /* Adjust the width as needed */
+    height: auto;
+    margin-right: 20px; /* Adjust the margin as needed */
+  }
+  
+  .Volunt1-content p {
+    flex: 1;
+  }
+  .content2-box {
+    width: 100%; /* Adjust the width of the box as needed */
+    border-radius: 10px;
+    border: 1px solid #ccc; /* Optional: Add border for visual separation */
+    padding: 20px; /* Optional: Add padding for spacing */
+  }
+.Volunt2-content {
+    display: flex;
+    align-items: center;
+}
+  
+  .Volunt2-content img {
+    flex: 0 0 auto;
+    width: 500px; /* Adjust the width as needed */
+    height: auto;
+    margin-right: 20px; /* Adjust the margin as needed */
+  }
+  
+  .Volunt2-content p {
+    flex: 1;
+  }
+  /* Slider container */
+.slider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Container for slides */
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+/* Slide styling */
+.content-box, .content1-box, .content2-box {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+/* Navigation buttons */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
 /*-----------------------------------contact--------------------------------------*/
 
 .contact-left{
@@ -751,7 +840,12 @@ nav .fa-regular{
     .Volunt-content {
         flex-direction: column;
     }
-
+    .Volunt1-content{
+        flex-direction: column;
+    }
+    .Volunt2-content{
+        flex-direction: column;
+    }
     .contact-left,
     .contact-right {
         width: 100%;

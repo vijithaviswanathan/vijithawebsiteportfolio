@@ -37,3 +37,28 @@ var sidemenu = document.getElementById("sidemenu");
         })
         .catch(error => console.error('Error!', error.message))
     } )
+
+    document.addEventListener('DOMContentLoaded', function() {
+        const slides = document.querySelector('.slides');
+        const prevButton = document.querySelector('.prev');
+        const nextButton = document.querySelector('.next');
+        
+        let index = 0;
+        const totalSlides = document.querySelectorAll('.slides > div').length;
+    
+        function showSlide(i) {
+            index = (i + totalSlides) % totalSlides; // Ensure index is within bounds
+            slides.style.transform = `translateX(${-index * 100}%)`;
+        }
+    
+        prevButton.addEventListener('click', function() {
+            showSlide(index - 1);
+        });
+    
+        nextButton.addEventListener('click', function() {
+            showSlide(index + 1);
+        });
+    
+        // Show the first slide initially
+        showSlide(index);
+    });
