@@ -69,7 +69,7 @@ nav ul li a::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #ff004f;
+    background: #fff;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -88,7 +88,7 @@ nav ul li a:hover::after{
     margin-top: 20px;
 }
 .header-text h1 span{
-    color: #ff004f;
+    color: #fff;
 }
 /*---------------------------about-----------------------------------*/
 #about{
@@ -327,7 +327,7 @@ nav ul li a:hover::after{
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
     .project-list > div {
         width: 100%;
     }
@@ -934,7 +934,7 @@ nav .fa-regular{
     display: block;
 }
 /* Base styles for mobile screens */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1200px) {
     #Achievement {
         padding: 10px;
     }
@@ -1004,38 +1004,5 @@ nav .fa-regular{
 
     a:hover {
         text-decoration: underline;
-    }
-}
-
-/* Media Query for larger screens */
-@media (min-width: 768px) {
-    .row {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .about-col-1 {
-        flex: 1;
-        margin-right: 20px;
-    }
-
-    .about-col-2 {
-        flex: 2;
-    }
-
-    .sub-title {
-        font-size: 28px;
-    }
-
-    .subedu-title, .subexp-title {
-        font-size: 24px;
-    }
-
-    .Edu-Icons i, .Exp-Icons i {
-        font-size: 30px;
-    }
-
-    .Edu-content p, .Exps-Content p {
-        font-size: 16px;
     }
 }
