@@ -171,6 +171,9 @@ nav ul li a:hover::after{
 .Exps-Content {
     margin-left: 20px; /* Adjust margin-left as needed */
 }
+.about-col-2 p {
+    text-align: justify;
+}
 /*------------------------------Skills---------------------------*/
 #Skills {
     padding: 30px 0;
@@ -211,6 +214,26 @@ nav ul li a:hover::after{
     display: inline-block; /* Ensure images appear in a row */
     vertical-align: top; /* Align images to the top */
 }
+/* Mobile screens: 3 images per row */
+@media (max-width: 599px) {
+    #Skills .container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Tablet screens: 5 images per row */
+@media (min-width: 600px) and (max-width: 899px) {
+    #Skills .container {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+/* Laptop screens: 6 images per row */
+@media (min-width: 900px) {
+    #Skills .container {
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
 /*-----------------------------------Experience-------------------------------------*/
 #Experience {
     text-align: center; /* Center align the content */
@@ -249,6 +272,9 @@ nav ul li a:hover::after{
 
 .Experinece-1 {
     margin-right: 20px; /* Add margin between the boxes */
+}
+.exp-1-content, .exp-2-content{
+        text-align: justify;
 }
 /*---------------------------------------Project----------------------------------*/
 
@@ -591,6 +617,9 @@ h1.clg, h1.office, h1.clg-1 , h1.clg-2{
 .Achieve a:hover {
     text-decoration: underline;
 }
+.Achieve p{
+    text-align: justify;
+}
 /*------------------------------------volunteering----------------------------*/
 .content-box {
     width: 100%; /* Adjust the width of the box as needed */
@@ -701,6 +730,9 @@ h1.clg, h1.office, h1.clg-1 , h1.clg-2{
 
 .prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.8);
+}
+.Volunt-content, .Volunt1-content, .Volunt2-content{
+    text-align: justify;
 }
 /*-----------------------------------contact--------------------------------------*/
 
